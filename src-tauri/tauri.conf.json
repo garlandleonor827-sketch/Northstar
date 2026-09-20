@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Northstar",
+  "version": "0.1.0",
+  "identifier": "com.northstar.local",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://127.0.0.1:4173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "Northstar · 北辰", "width": 1600, "height": 1000, "minWidth": 1024, "minHeight": 720, "resizable": true, "fullscreen": false }],
+    "security": { "capabilities": ["default"] }
+  },
+  "bundle": { "active": false }
+}

@@ -1,0 +1,282 @@
+{
+  "environment": {
+    "os": "Linux",
+    "python": "3.13.5",
+    "node": "v22.16.0",
+    "chromium": "144.0.7559.96"
+  },
+  "checks": [
+    {
+      "name": "week-change.schema.json sample",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "week-change.schema.json reject extra field",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "strategic-proposal.schema.json sample",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "strategic-proposal.schema.json reject extra field",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: assets/provenance.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/sample-state.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/core-rules.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/strategic-proposal.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/sample-strategic-proposal.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/week-change.schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: contracts/sample-week-change.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "JSON: design/tokens.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PNG decode generated-moodboard-alternate.png",
+      "status": "PASS",
+      "detail": "(1536, 1024)"
+    },
+    {
+      "name": "PNG decode generated-moodboard.png",
+      "status": "PASS",
+      "detail": "(1536, 1024)"
+    },
+    {
+      "name": "reference size core-evolution-reference.png",
+      "status": "PASS",
+      "detail": "(1600, 1000)"
+    },
+    {
+      "name": "reference size review-dark.png",
+      "status": "PASS",
+      "detail": "(1600, 1000)"
+    },
+    {
+      "name": "reference size today-light.png",
+      "status": "PASS",
+      "detail": "(1600, 1000)"
+    },
+    {
+      "name": "reference size today-dark.png",
+      "status": "PASS",
+      "detail": "(1600, 1000)"
+    },
+    {
+      "name": "PNG decode core-source-crop.png",
+      "status": "PASS",
+      "detail": "(311, 214)"
+    },
+    {
+      "name": "alpha core-source-crop.png",
+      "status": "PASS",
+      "detail": "(0, 255)"
+    },
+    {
+      "name": "transparent corners core-source-crop.png",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PNG decode core-fallback-light.png",
+      "status": "PASS",
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "alpha core-fallback-light.png",
+      "status": "PASS",
+      "detail": "(0, 255)"
+    },
+    {
+      "name": "transparent corners core-fallback-light.png",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PNG decode core-fallback-dark.png",
+      "status": "PASS",
+      "detail": "(1024, 1024)"
+    },
+    {
+      "name": "alpha core-fallback-dark.png",
+      "status": "PASS",
+      "detail": "(0, 255)"
+    },
+    {
+      "name": "transparent corners core-fallback-dark.png",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "WebP alpha core-fallback-light.webp",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "WebP alpha core-fallback-dark.webp",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "contrast dark:text/canvas",
+      "status": "PASS",
+      "detail": "17.2"
+    },
+    {
+      "name": "contrast dark:text/surface",
+      "status": "PASS",
+      "detail": "15.5"
+    },
+    {
+      "name": "contrast dark:muted/surface",
+      "status": "PASS",
+      "detail": "7.76"
+    },
+    {
+      "name": "contrast dark:muted/raised",
+      "status": "PASS",
+      "detail": "7.0"
+    },
+    {
+      "name": "contrast dark:accent/surface",
+      "status": "PASS",
+      "detail": "11.4"
+    },
+    {
+      "name": "contrast dark:accentText/accent",
+      "status": "PASS",
+      "detail": "12.25"
+    },
+    {
+      "name": "contrast light:text/canvas",
+      "status": "PASS",
+      "detail": "13.29"
+    },
+    {
+      "name": "contrast light:text/surface",
+      "status": "PASS",
+      "detail": "14.97"
+    },
+    {
+      "name": "contrast light:muted/surface",
+      "status": "PASS",
+      "detail": "6.07"
+    },
+    {
+      "name": "contrast light:muted/raised",
+      "status": "PASS",
+      "detail": "5.08"
+    },
+    {
+      "name": "contrast light:accent/surface",
+      "status": "PASS",
+      "detail": "7.37"
+    },
+    {
+      "name": "contrast light:accentText/accent",
+      "status": "PASS",
+      "detail": "7.37"
+    },
+    {
+      "name": "Inline gallery images (not file navigation)",
+      "status": "PASS",
+      "detail": "6"
+    },
+    {
+      "name": "Offline gallery no JS errors",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "Gallery no overflow 1600",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gallery no overflow 1280",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gallery no overflow 1024",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Gallery no overflow 768",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Reference rule tests",
+      "status": "PASS",
+      "detail": [
+        "# tests 45",
+        "# suites 0",
+        "# pass 45",
+        "# fail 0",
+        "# cancelled 0",
+        "# skipped 0",
+        "# todo 0",
+        "# duration_ms 339.476104"
+      ]
+    }
+  ],
+  "pass_count": 48,
+  "contrast_ratios": {
+    "dark:text/canvas": 17.2,
+    "dark:text/surface": 15.5,
+    "dark:muted/surface": 7.76,
+    "dark:muted/raised": 7.0,
+    "dark:accent/surface": 11.4,
+    "dark:accentText/accent": 12.25,
+    "light:text/canvas": 13.29,
+    "light:text/surface": 14.97,
+    "light:muted/surface": 6.07,
+    "light:muted/raised": 5.08,
+    "light:accent/surface": 7.37,
+    "light:accentText/accent": 7.37
+  },
+  "not_tested": [
+    "Direct file:// gallery opening (blocked by browser environment)",
+    "Windows application runtime",
+    "real provider API calls",
+    "production database and secure credential storage",
+    "real-time 3D renderer",
+    "full application responsiveness and accessibility"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "requestId": "demo-replan-001",
+  "baseVersion": 4,
+  "planId": "demo-week",
+  "reason": "用户已将本周自主成长容量由600分钟改为240分钟；仅取消可选任务的本周排程，不删除任务。",
+  "actions": [
+    {
+      "type": "unschedule_task",
+      "taskId": "t3",
+      "date": null,
+      "rank": 3
+    },
+    {
+      "type": "unschedule_task",
+      "taskId": "t4",
+      "date": null,
+      "rank": 4
+    },
+    {
+      "type": "unschedule_task",
+      "taskId": "t5",
+      "date": null,
+      "rank": 5
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "demo-week",
+  "version": 4,
+  "start": "2026-09-21",
+  "end": "2026-09-27",
+  "capacityMinutes": 240,
+  "autoAdjust": true,
+  "primaryProjects": [
+    "demo-primary"
+  ],
+  "outcome": "完成输入流程的可用性验证",
+  "tasks": [
+    {
+      "id": "t1",
+      "minutes": 120,
+      "scheduledDate": "2026-09-22",
+      "rank": 1,
+      "pinned": false,
+      "hardDue": null,
+      "completed": false,
+      "dependsOn": []
+    },
+    {
+      "id": "t2",
+      "minutes": 120,
+      "scheduledDate": "2026-09-23",
+      "rank": 2,
+      "pinned": false,
+      "hardDue": null,
+      "completed": false,
+      "dependsOn": [
+        "t1"
+      ]
+    },
+    {
+      "id": "t3",
+      "minutes": 180,
+      "scheduledDate": "2026-09-24",
+      "rank": 3,
+      "pinned": false,
+      "hardDue": null,
+      "completed": false,
+      "dependsOn": []
+    },
+    {
+      "id": "t4",
+      "minutes": 120,
+      "scheduledDate": "2026-09-25",
+      "rank": 4,
+      "pinned": false,
+      "hardDue": null,
+      "completed": false,
+      "dependsOn": []
+    },
+    {
+      "id": "t5",
+      "minutes": 60,
+      "scheduledDate": "2026-09-26",
+      "rank": 5,
+      "pinned": false,
+      "hardDue": null,
+      "completed": false,
+      "dependsOn": []
+    }
+  ]
+}

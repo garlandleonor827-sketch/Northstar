@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "created": "2026-09-20",
+  "items": [
+    {
+      "file": "concepts/generated-moodboard.png",
+      "origin": "image_gen",
+      "generation_id": "76a50007-de28-4dec-81da-6906a6e237e8",
+      "role": "non_authoritative_concept"
+    },
+    {
+      "file": "concepts/generated-moodboard-alternate.png",
+      "origin": "image_gen",
+      "generation_id": "586a5349-4652-43db-bb25-f4187b0e11ef",
+      "role": "non_authoritative_concept"
+    },
+    {
+      "file": "core/core-fallback-dark.png",
+      "origin": "crop_and_alpha_unmatte",
+      "source": "concepts/generated-moodboard.png",
+      "source_crop_xyxy": [
+        650,
+        69,
+        961,
+        283
+      ],
+      "native_crop_dimensions": [
+        311,
+        214
+      ],
+      "canvas_dimensions": [
+        1024,
+        1024
+      ],
+      "role": "static_fallback_only"
+    },
+    {
+      "file": "core/core-fallback-light.png",
+      "origin": "theme_adjusted_derivative",
+      "source": "core/core-fallback-dark.png",
+      "role": "static_fallback_only"
+    },
+    {
+      "file": "ui/",
+      "origin": "programmatic_layout_with_system_fonts_and_generated_core_crops",
+      "native_dimensions": [
+        1600,
+        1000
+      ],
+      "role": "visual_reference_only"
+    },
+    {
+      "file": "brand/",
+      "origin": "original_vector_design",
+      "role": "usable_vector_assets"
+    }
+  ],
+  "fonts": "System fonts were used for rasterization; font binaries are not distributed.",
+  "runtime_3d_model_included": false,
+  "standalone_high_resolution_generated_core": false
+}

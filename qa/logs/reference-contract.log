@@ -1,0 +1,57 @@
+
+> northstar-local@0.1.0 test:contract
+> node --test tests/contract.test.mjs
+
+✔ 10h→4h: capacity holds and task definitions survive (1.1864ms)
+✔ idempotent request does not append audit (0.1828ms)
+✔ key order does not defeat canonical idempotency (0.1756ms)
+✔ same request id with different content rejected (0.3709ms)
+✔ stale version cannot overwrite (0.5089ms)
+✔ different plan cannot be patched (0.137ms)
+✔ initial auto-adjust consent required (0.1454ms)
+✔ model cannot add arbitrary authority field (0.1077ms)
+✔ high-level goal operation rejected (0.1407ms)
+✔ arbitrary SQL path rejected (0.2179ms)
+✔ locked responsibility protected (0.127ms)
+✔ completed record protected (0.13ms)
+✔ hard deadline cannot silently be unscheduled (0.1213ms)
+✔ unknown task rejected (0.1156ms)
+✔ duplicate target rejected (0.1133ms)
+✔ batch rejection rolls back prior legal actions (0.0848ms)
+✔ capacity remains hard bound (0.0923ms)
+✔ negative capacity invalid (0.0751ms)
+✔ cross-week reschedule requires proposal (0.781ms)
+✔ invalid date fails closed (0.2124ms)
+✔ unschedule action must use null (0.1242ms)
+✔ rank must be integer (0.135ms)
+✔ second primary focus rejected (0.0956ms)
+✔ dependency cannot be removed beneath active task (0.1152ms)
+✔ undo appends compensation and restores schedule (0.2018ms)
+✔ undo rejects intervening edit (0.1477ms)
+✔ old request cannot be reapplied after undo (0.147ms)
+✔ no records means unknown, not failure (0.0661ms)
+✔ insufficient coverage does not produce a performance rate (0.044ms)
+✔ cancelled is not completed; partial is not fully completed (0.0413ms)
+✔ review reward is capped and de-duplicated (0.1725ms)
+✔ same evidence cannot be rewarded next week (0.0596ms)
+✔ unconfirmed evidence receives no XP (0.0346ms)
+✔ recovery toggles and task ticks receive no XP (0.0418ms)
+✔ weekly cap bounds milestone farming (0.0915ms)
+✔ correction lowers valid XP but never reached stage (0.0932ms)
+✔ API root preserves /v1 with no duplication (0.1465ms)
+✔ custom proxy path preserved (0.0766ms)
+✔ loopback HTTP needs explicit local consent (0.0609ms)
+✔ remote HTTP disallowed even with local flag (0.0363ms)
+✔ credential in URL rejected (0.0326ms)
+✔ query in API root rejected (0.0477ms)
+✔ full completion endpoint not mistaken for API root (0.0328ms)
+✔ undo must not exceed currently approved capacity (0.547ms)
+✔ request IDs cannot alter receipt object prototypes (0.1149ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.835

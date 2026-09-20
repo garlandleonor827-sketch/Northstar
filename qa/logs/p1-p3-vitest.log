@@ -1,0 +1,15 @@
+
+> northstar-local@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 D:/desktop/Northstar/Northstar_Codex_Kit
+
+ ✓ tests/ai.test.ts (5 tests) 5ms
+ ✓ tests/domain.test.ts (10 tests) 18ms
+
+ Test Files  2 passed (2)
+      Tests  15 passed (15)
+   Start at  17:56:03
+   Duration  297ms (transform 73ms, setup 0ms, collect 122ms, tests 23ms, environment 0ms, prepare 125ms)
+

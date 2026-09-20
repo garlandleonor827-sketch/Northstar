@@ -1,0 +1,24 @@
+# Dependencies and generated frontend output
+node_modules/
+dist/
+.vite/
+
+# Rust/Tauri build output
+src-tauri/target/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local runtime scratch files
+*.log.tmp
+

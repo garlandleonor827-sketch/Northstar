@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Northstar desktop window with no shell, filesystem, or external network capabilities.","local":true,"windows":["main"],"permissions":["core:default"]}}

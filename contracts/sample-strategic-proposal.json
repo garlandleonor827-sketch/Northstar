@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "proposalId": "demo-proposal-001",
+  "baseVersions": {
+    "demo-quarter": 2
+  },
+  "summary": "建议缩小季度成果范围，等待用户确认",
+  "evidenceIds": [
+    "demo-review-001"
+  ],
+  "benefits": [
+    "降低计划负荷"
+  ],
+  "risks": [
+    "部分功能需延后验证"
+  ],
+  "changes": [
+    {
+      "type": "revise_goal",
+      "targetId": "demo-quarter",
+      "before": "完成整个学习工具",
+      "after": "完成带原文定位的知识卡片流程"
+    }
+  ]
+}

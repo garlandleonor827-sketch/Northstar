@@ -1,0 +1,35 @@
+
+> northstar-local@0.1.0 tauri:info
+> tauri info
+
+
+[✔] Environment
+    - OS: Windows 10.0.26200 x86_64 (X64)
+    ✔ WebView2: 153.0.4234.32
+    ✔ MSVC: Visual Studio Community 2026
+    ✔ rustc: 1.98.1 (48a229cea 2026-09-01)
+    ✔ cargo: 1.98.1 (797e8a9bc 2026-08-05)
+    ✔ rustup: 1.29.1 (d95a37b6a 2026-08-13)
+    ✔ Rust toolchain: stable-x86_64-pc-windows-msvc (default)
+    - node: 24.14.1
+    - pnpm: 11.10.0
+    - yarn: 1.22.22
+    - npm: 11.9.0
+
+[-] Packages
+    - tauri 🦀: 2.11.6
+    - tauri-build 🦀: 2.6.3
+    - wry 🦀: 0.55.1, (outdated, latest: 0.57.0)
+    - tao 🦀: 0.35.3, (outdated, latest: 0.37.0)
+    - @tauri-apps/api  ⱼₛ: 2.11.1
+    - @tauri-apps/cli  ⱼₛ: 2.11.5
+
+[-] Plugins
+
+[-] App
+    - build-type: build
+    - CSP: unset
+    - frontendDist: ../dist
+    - devUrl: http://127.0.0.1:4173/
+    - framework: React
+    - bundler: Vite

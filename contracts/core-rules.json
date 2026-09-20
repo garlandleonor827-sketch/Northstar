@@ -1,0 +1,34 @@
+{
+  "ruleVersion": 1,
+  "stageThresholds": [
+    0,
+    100,
+    300,
+    700,
+    1500,
+    3000,
+    6000
+  ],
+  "weeklyCap": 60,
+  "awards": {
+    "weekly_outcome": 20,
+    "milestone": 30,
+    "review": 10,
+    "deliberate_tradeoff": 10
+  },
+  "limitsPerPeriod": {
+    "weekly_outcome": 1,
+    "milestone": 2,
+    "review": 1,
+    "deliberate_tradeoff": 1
+  },
+  "awardOnlyConfirmed": true,
+  "noAwardForTaskCount": true,
+  "noAwardForTime": true,
+  "noAwardForRecoveryToggle": true,
+  "highestStageNeverDecreases": true,
+  "deduplication": "ruleVersion+eventType+sourceId (global, not reset next week)",
+  "period": "explicit user-local ISO week derived by application, never supplied by AI",
+  "correction": "revoke invalid event from valid_xp; keep highest_stage; no repeated source re-award",
+  "note": "测试用产品初值，正式使用后可迁移调参；不保证任何进化时间。"
+}

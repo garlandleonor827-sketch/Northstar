@@ -1,0 +1,280 @@
+TAP version 13
+# Subtest: 10h→4h: capacity holds and task definitions survive
+ok 1 - 10h→4h: capacity holds and task definitions survive
+  ---
+  duration_ms: 8.337847
+  type: 'test'
+  ...
+# Subtest: idempotent request does not append audit
+ok 2 - idempotent request does not append audit
+  ---
+  duration_ms: 0.772258
+  type: 'test'
+  ...
+# Subtest: key order does not defeat canonical idempotency
+ok 3 - key order does not defeat canonical idempotency
+  ---
+  duration_ms: 0.741527
+  type: 'test'
+  ...
+# Subtest: same request id with different content rejected
+ok 4 - same request id with different content rejected
+  ---
+  duration_ms: 1.43382
+  type: 'test'
+  ...
+# Subtest: stale version cannot overwrite
+ok 5 - stale version cannot overwrite
+  ---
+  duration_ms: 1.944543
+  type: 'test'
+  ...
+# Subtest: different plan cannot be patched
+ok 6 - different plan cannot be patched
+  ---
+  duration_ms: 0.485895
+  type: 'test'
+  ...
+# Subtest: initial auto-adjust consent required
+ok 7 - initial auto-adjust consent required
+  ---
+  duration_ms: 0.603893
+  type: 'test'
+  ...
+# Subtest: model cannot add arbitrary authority field
+ok 8 - model cannot add arbitrary authority field
+  ---
+  duration_ms: 0.309389
+  type: 'test'
+  ...
+# Subtest: high-level goal operation rejected
+ok 9 - high-level goal operation rejected
+  ---
+  duration_ms: 0.809551
+  type: 'test'
+  ...
+# Subtest: arbitrary SQL path rejected
+ok 10 - arbitrary SQL path rejected
+  ---
+  duration_ms: 0.946483
+  type: 'test'
+  ...
+# Subtest: locked responsibility protected
+ok 11 - locked responsibility protected
+  ---
+  duration_ms: 0.476994
+  type: 'test'
+  ...
+# Subtest: completed record protected
+ok 12 - completed record protected
+  ---
+  duration_ms: 0.425945
+  type: 'test'
+  ...
+# Subtest: hard deadline cannot silently be unscheduled
+ok 13 - hard deadline cannot silently be unscheduled
+  ---
+  duration_ms: 0.491413
+  type: 'test'
+  ...
+# Subtest: unknown task rejected
+ok 14 - unknown task rejected
+  ---
+  duration_ms: 0.380118
+  type: 'test'
+  ...
+# Subtest: duplicate target rejected
+ok 15 - duplicate target rejected
+  ---
+  duration_ms: 0.293074
+  type: 'test'
+  ...
+# Subtest: batch rejection rolls back prior legal actions
+ok 16 - batch rejection rolls back prior legal actions
+  ---
+  duration_ms: 2.511263
+  type: 'test'
+  ...
+# Subtest: capacity remains hard bound
+ok 17 - capacity remains hard bound
+  ---
+  duration_ms: 0.320161
+  type: 'test'
+  ...
+# Subtest: negative capacity invalid
+ok 18 - negative capacity invalid
+  ---
+  duration_ms: 0.236664
+  type: 'test'
+  ...
+# Subtest: cross-week reschedule requires proposal
+ok 19 - cross-week reschedule requires proposal
+  ---
+  duration_ms: 2.466743
+  type: 'test'
+  ...
+# Subtest: invalid date fails closed
+ok 20 - invalid date fails closed
+  ---
+  duration_ms: 0.534868
+  type: 'test'
+  ...
+# Subtest: unschedule action must use null
+ok 21 - unschedule action must use null
+  ---
+  duration_ms: 0.469345
+  type: 'test'
+  ...
+# Subtest: rank must be integer
+ok 22 - rank must be integer
+  ---
+  duration_ms: 0.473715
+  type: 'test'
+  ...
+# Subtest: second primary focus rejected
+ok 23 - second primary focus rejected
+  ---
+  duration_ms: 0.356235
+  type: 'test'
+  ...
+# Subtest: dependency cannot be removed beneath active task
+ok 24 - dependency cannot be removed beneath active task
+  ---
+  duration_ms: 0.35403
+  type: 'test'
+  ...
+# Subtest: undo appends compensation and restores schedule
+ok 25 - undo appends compensation and restores schedule
+  ---
+  duration_ms: 0.643082
+  type: 'test'
+  ...
+# Subtest: undo rejects intervening edit
+ok 26 - undo rejects intervening edit
+  ---
+  duration_ms: 0.33423
+  type: 'test'
+  ...
+# Subtest: old request cannot be reapplied after undo
+ok 27 - old request cannot be reapplied after undo
+  ---
+  duration_ms: 0.498173
+  type: 'test'
+  ...
+# Subtest: no records means unknown, not failure
+ok 28 - no records means unknown, not failure
+  ---
+  duration_ms: 0.179337
+  type: 'test'
+  ...
+# Subtest: insufficient coverage does not produce a performance rate
+ok 29 - insufficient coverage does not produce a performance rate
+  ---
+  duration_ms: 0.127891
+  type: 'test'
+  ...
+# Subtest: cancelled is not completed; partial is not fully completed
+ok 30 - cancelled is not completed; partial is not fully completed
+  ---
+  duration_ms: 0.269604
+  type: 'test'
+  ...
+# Subtest: review reward is capped and de-duplicated
+ok 31 - review reward is capped and de-duplicated
+  ---
+  duration_ms: 0.542356
+  type: 'test'
+  ...
+# Subtest: same evidence cannot be rewarded next week
+ok 32 - same evidence cannot be rewarded next week
+  ---
+  duration_ms: 0.147091
+  type: 'test'
+  ...
+# Subtest: unconfirmed evidence receives no XP
+ok 33 - unconfirmed evidence receives no XP
+  ---
+  duration_ms: 0.093442
+  type: 'test'
+  ...
+# Subtest: recovery toggles and task ticks receive no XP
+ok 34 - recovery toggles and task ticks receive no XP
+  ---
+  duration_ms: 0.114638
+  type: 'test'
+  ...
+# Subtest: weekly cap bounds milestone farming
+ok 35 - weekly cap bounds milestone farming
+  ---
+  duration_ms: 0.409163
+  type: 'test'
+  ...
+# Subtest: correction lowers valid XP but never reached stage
+ok 36 - correction lowers valid XP but never reached stage
+  ---
+  duration_ms: 0.270616
+  type: 'test'
+  ...
+# Subtest: API root preserves /v1 with no duplication
+ok 37 - API root preserves /v1 with no duplication
+  ---
+  duration_ms: 0.293839
+  type: 'test'
+  ...
+# Subtest: custom proxy path preserved
+ok 38 - custom proxy path preserved
+  ---
+  duration_ms: 0.540096
+  type: 'test'
+  ...
+# Subtest: loopback HTTP needs explicit local consent
+ok 39 - loopback HTTP needs explicit local consent
+  ---
+  duration_ms: 0.27263
+  type: 'test'
+  ...
+# Subtest: remote HTTP disallowed even with local flag
+ok 40 - remote HTTP disallowed even with local flag
+  ---
+  duration_ms: 0.334278
+  type: 'test'
+  ...
+# Subtest: credential in URL rejected
+ok 41 - credential in URL rejected
+  ---
+  duration_ms: 0.300128
+  type: 'test'
+  ...
+# Subtest: query in API root rejected
+ok 42 - query in API root rejected
+  ---
+  duration_ms: 0.233658
+  type: 'test'
+  ...
+# Subtest: full completion endpoint not mistaken for API root
+ok 43 - full completion endpoint not mistaken for API root
+  ---
+  duration_ms: 0.287166
+  type: 'test'
+  ...
+# Subtest: undo must not exceed currently approved capacity
+ok 44 - undo must not exceed currently approved capacity
+  ---
+  duration_ms: 0.739634
+  type: 'test'
+  ...
+# Subtest: request IDs cannot alter receipt object prototypes
+ok 45 - request IDs cannot alter receipt object prototypes
+  ---
+  duration_ms: 0.587513
+  type: 'test'
+  ...
+1..45
+# tests 45
+# suites 0
+# pass 45
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 339.476104
