@@ -21,4 +21,4 @@ Thumbs.db
 
 # Local runtime scratch files
 *.log.tmp
-
+*.lnk

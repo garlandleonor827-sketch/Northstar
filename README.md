@@ -22,6 +22,8 @@ npm run tauri:dev
 
 可用 `npm run tauri:info` 检查 Windows 原生开发依赖。若只想运行浏览器开发版，不需要设置这些变量。
 
+也可以双击项目根目录的 `Start Northstar.lnk`。它会以隐藏终端启动同一个 Tauri 开发窗口；关闭 Northstar 后，开发进程随之结束。快捷方式是本机生成的，不提交到仓库；脚本 `Start-Northstar.ps1` 和 `Start-Northstar-hidden.vbs` 会随源码保留。
+
 当前开发版默认无 Key，核心规划、任务记录、复盘提案、灵感冷却、记忆确认/删除、成长去重和 JSON 导出均可离线使用。所有候选变更先经过 `src/lib/domain.ts` 的权限、版本、容量、保护项、依赖、幂等、审计与撤销检查。
 
 ## 阶段记录

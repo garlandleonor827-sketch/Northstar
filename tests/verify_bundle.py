@@ -5,12 +5,13 @@ from urllib.parse import unquote
 R=Path(__file__).resolve().parents[1]
 errors=[]
 IGNORED_DIRS={'.git','node_modules','dist','.vite','target','logs'}
+IGNORED_SUFFIXES={'.lnk'}
 def ignored(path):
     try:
         rel=path.relative_to(R)
     except ValueError:
         return False
-    return any(part in IGNORED_DIRS for part in rel.parts)
+    return any(part in IGNORED_DIRS for part in rel.parts) or path.suffix.lower() in IGNORED_SUFFIXES
 manifest=R/'MANIFEST.sha256'
 if not manifest.exists():
     print('FAIL: MANIFEST.sha256 missing');sys.exit(1)
