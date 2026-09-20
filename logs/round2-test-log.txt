@@ -1,0 +1,109 @@
+=== typecheck ===
+
+> northstar-local@0.1.0 typecheck
+> tsc --noEmit
+
+exit=0
+=== build ===
+
+> northstar-local@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1583 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:   0.31 kB
+dist/assets/index-CDk36wjp.css   34.26 kB │ gzip:   7.46 kB
+dist/assets/index-DqvueOAv.js   780.45 kB │ gzip: 214.88 kB │ map: 3,932.66 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.63s
+exit=0
+=== unit ===
+
+> northstar-local@0.1.0 test
+> vitest run --run
+
+
+ RUN  v3.2.7 D:/desktop/Northstar/Northstar_Codex_Kit
+
+ ✓ tests/ai.test.ts (5 tests) 6ms
+ ✓ tests/domain.test.ts (10 tests) 19ms
+
+ Test Files  2 passed (2)
+      Tests  15 passed (15)
+   Start at  20:30:34
+   Duration  297ms (transform 90ms, setup 0ms, collect 116ms, tests 25ms, environment 0ms, prepare 128ms)
+
+exit=0
+=== contract ===
+
+> northstar-local@0.1.0 test:contract
+> node --test tests/contract.test.mjs
+
+✔ 10h→4h: capacity holds and task definitions survive (1.3151ms)
+✔ idempotent request does not append audit (0.1998ms)
+✔ key order does not defeat canonical idempotency (0.1956ms)
+✔ same request id with different content rejected (0.457ms)
+✔ stale version cannot overwrite (0.5736ms)
+✔ different plan cannot be patched (0.1365ms)
+✔ initial auto-adjust consent required (0.1467ms)
+✔ model cannot add arbitrary authority field (0.1067ms)
+✔ high-level goal operation rejected (0.137ms)
+✔ arbitrary SQL path rejected (0.1794ms)
+✔ locked responsibility protected (0.1376ms)
+✔ completed record protected (0.121ms)
+✔ hard deadline cannot silently be unscheduled (0.114ms)
+✔ unknown task rejected (0.102ms)
+✔ duplicate target rejected (0.1203ms)
+✔ batch rejection rolls back prior legal actions (0.0933ms)
+✔ capacity remains hard bound (0.0936ms)
+✔ negative capacity invalid (0.0705ms)
+✔ cross-week reschedule requires proposal (0.8526ms)
+✔ invalid date fails closed (0.2333ms)
+✔ unschedule action must use null (0.1347ms)
+✔ rank must be integer (0.1533ms)
+✔ second primary focus rejected (0.1067ms)
+✔ dependency cannot be removed beneath active task (0.1237ms)
+✔ undo appends compensation and restores schedule (0.2128ms)
+✔ undo rejects intervening edit (0.1556ms)
+✔ old request cannot be reapplied after undo (0.1658ms)
+✔ no records means unknown, not failure (0.0759ms)
+✔ insufficient coverage does not produce a performance rate (0.0474ms)
+✔ cancelled is not completed; partial is not fully completed (0.0454ms)
+✔ review reward is capped and de-duplicated (0.1854ms)
+✔ same evidence cannot be rewarded next week (0.0653ms)
+✔ unconfirmed evidence receives no XP (0.0382ms)
+✔ recovery toggles and task ticks receive no XP (0.0454ms)
+✔ weekly cap bounds milestone farming (0.1047ms)
+✔ correction lowers valid XP but never reached stage (0.1147ms)
+✔ API root preserves /v1 with no duplication (0.1285ms)
+✔ custom proxy path preserved (0.0739ms)
+✔ loopback HTTP needs explicit local consent (0.0669ms)
+✔ remote HTTP disallowed even with local flag (0.1131ms)
+✔ credential in URL rejected (0.0483ms)
+✔ query in API root rejected (0.159ms)
+✔ full completion endpoint not mistaken for API root (0.0639ms)
+✔ undo must not exceed currently approved capacity (0.7053ms)
+✔ request IDs cannot alter receipt object prototypes (0.1633ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84.8805
+exit=0
+=== bundle ===
+
+> northstar-local@0.1.0 test:bundle
+> python tests/verify_bundle.py
+
+PASS: 74 files; SHA-256, inventory, local Markdown links, SVG XML, font and token scans.
+exit=0
